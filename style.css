@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+}
+
+@font-face {
+  font-family: "MileJokic";
+  src: url(fonts/Typo\ Draft\ Demo.otf);
+}
+
+@font-face {
+  font-family: "MileJokic1";
+  src: url(fonts/Doctor\ Glitch.otf);
+}
+.hero {
+  width: 50%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #080b0b, #27a8ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero h1 {
+  color: rgb(185, 236, 245);
+  font-size: 25px;
+  margin-top: -50px;
+  margin-bottom: 50px;
+  font-family: "MileJokic1";
+}
+
+.hero span {
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+  font-size: 2.5rem;
+  text-shadow: 51px 3 0px 4px rebeccapurple;
+  font-family: "MileJokic";
+}
+
+textarea {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 63%;
+  height: 250px;
+  background-color: rgb(162, 222, 241);
+  color: #2e2b06;
+  font-size: 1rem;
+  border: 0;
+  outline: 0;
+  padding: 20px;
+  border-radius: 10px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.row {
+  width: 63%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.row button {
+  background: #ff2693;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #d2e1eb;
+  color: #ff2693;
+  transition: 0.5s ease-in-out;
+}
+
+select {
+  flex: 1;
+  background: rgb(155, 227, 243);
+  color: rgb(128, 27, 196);
+  height: 40px;
+  padding: 0 20px;
+  outline: 0;
+  border: none;
+  border-radius: 35px;
+  appearance: none;
+  background-image: url(photos/dropdown.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position-x: calc(100% - 20px);
+  background-position-y: 10px;
+}
+
+#btnRecord {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  flex: 1;
+  text-align: center;
+}
+
+@media (max-width: 1350px) {
+  body {
+    display: block;
+  }
+  h1 {
+    text-align: center;
+  }
+  .hero {
+    width: 100%;
+  }
+  .row {
+    display: block;
+  }
+  .row button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #voiceSelect {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

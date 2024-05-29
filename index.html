@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to speach, speech to text converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <h1>Text to Speech <span>Converter</span></h1>
+      <textarea placeholder="Write anything here..."></textarea>
+      <div class="row">
+        <select id="voiceSelect"></select>
+        <button id="btnSpeech"><img src="photos/play.png" />Listen</button>
+      </div>
+    </div>
+    <div class="hero">
+      <h1>Speech to text <span id="recognitionCoverter">Converter</span></h1>
+      <textarea
+        placeholder="This is your speech in text format..."
+        id="transcript"
+      ></textarea>
+      <div class="row">
+        <button id="btnRecord"><img src="photos/record.png" />Record</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
